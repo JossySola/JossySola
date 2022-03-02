@@ -1,0 +1,302 @@
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////
+CONFIGURATION OF HEADER (WEBSITE LOGO) AND GENERAL BODY
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Kaushan Script', cursive;
+    font-size: larger;
+    color: #faebd7;
+    background-color: #011c3e;
+    text-align: center;
+    padding: 5px 0;
+    z-index: 3;
+}
+body {
+    background-color: #011326;
+    color: whitesmoke;
+    text-align: center;
+    align-items: center;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* This command hides the display of the scrollbar. However, it hides both scrollbars in X and Y axis */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////
+NEXT: DIVISION BLOCK CONTAINING THE HEADING TITLE AND NAVIGATION BAR
+*/
+h1 {
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+    margin: 70px 0px 30px;
+    min-width: 460px;
+}
+#band {
+    min-height: 200px;
+    max-height: 300px;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    background-color: #011326;
+}
+/*
+NAVIGATION BAR
+*/
+.nav {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 5%;
+    min-width: 460px;
+    max-width: auto;
+}
+.nav li {
+    float: left;
+    padding: 10px 10px;
+}
+.nav li a {
+    padding: 4px 10px;
+    background-color: #3A10E5;
+    border: 2px solid #3A10E5;
+    border-radius: 4px;
+    font-size: 20px;
+}
+.nav li a:hover {
+    background-color: #5533FF;
+    transition: background-color 1s;
+}
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////
+NEXT: DIVISION BLOCK CONTAINING ALL OF THE CONTENT
+*/
+#content {
+    z-index: 2;
+    position: relative;
+    top: 400px;
+    min-width: 1500px;
+    max-width: 100%;
+
+    background-color: rgb(238, 228, 215);
+    box-shadow: 5px 1px 15px 5px #000b18 ;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+/*
+NEXT: TABLE
+*/
+.sheet {
+    position: relative;
+    display: inline-block;
+    margin: 100px 60px;
+    color: black;
+}
+.sheet th, td {
+    background-color: white;
+    /*border-right: 1px solid #011326c9;
+    border-bottom: 1px solid #011326c9;
+    border-top: 1px solid rgb(238, 228, 215);
+    border-left: 1px solid rgb(238, 228, 215);*/
+    border-radius: 8px;
+    padding: 10px 5px;
+    /*box-shadow: -2px -1px 15px 1px #0113268c inset;*/
+}
+.sheet h2 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 35px;
+}
+.sheet h3 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 35px;
+}
+.sheet h4 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+}
+
+.theaders {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+}
+.sheet_intro {
+    background-color: dimgray;
+    color: white;
+    font-size: 20px;
+    font-family: Roboto;
+}
+.concept {
+    width: 250px;
+    padding: 0 30px;
+}
+.midcol {
+    width: 600px;
+    padding: 0 30px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 30px;
+}
+.fincol {
+    width: 500px;
+    height: 500px;
+    font-family: Roboto;
+    font-size: 15px;
+}
+.foot {
+    background-color: #e79b0e;
+}
+.syntax {
+    width: fit-content;
+    display: inline-block;
+    border: 1.7px dashed #011326;
+    border-radius: 5px;
+    color: rgb(14, 13, 13);
+    padding: 10px 0;
+}
+.syntax h4 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+/*
+NEXT: TABLE GRAPHICS
+*/
+.box-parent {
+    width: 100%;
+    height: 300px;
+    border: 2px solid black;
+}
+.box-content {
+    font-size: 25px;
+    background-color: white;
+    border: 1px dashed black;
+    width: fit-content;
+    z-index: 5;
+    position: absolute;
+    top: 90px;
+    left: 55px;
+}
+.box-padding {
+    background-color: rgb(0, 110, 255);
+    z-index: 4;
+    width: 150px;
+    height: 90px;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top: 60px;
+    left: 25px;
+}
+.box-border {
+    background-color: black;
+    font-size: 15px;
+    z-index: 3;
+    width: 170px;
+    height: 120px;
+    color: white;
+    position: absolute;
+    top: 45px;
+    left: 15px;
+}
+.box-margin {
+    font-size: 25px;
+    color: white;
+    z-index: 2;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    background-image: radial-gradient(circle, rgb(0, 110, 255), rgba(255,0,0,0));
+}
+.box-graphic {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    font-size: 25px;
+    margin: 0 30%;
+}
+.box-row {
+    border: 2px dashed black;
+    width: auto;
+    height: fit-content;
+    position: relative;
+}
+.box-window {
+    border: 2px solid black;
+    width: auto;
+    height: 350px;
+    overflow: scroll;
+}
+.box-inline-block {
+    border: 3px dashed #7fd400;
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    height: 60%;
+    top: 20%;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#box-static {
+    background-color: brown;
+    width: 50px;
+    height: 50px;
+    position: static;
+}
+#box-relative {
+    background-color: brown;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 110px;
+}
+#box-box {
+    background-color: dodgerblue;
+    width: 150px;
+    height: 100px;
+    position: relative;
+    color: white;
+}
+#box-absolute {
+    background-color: brown;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 110px;
+    top: 50px;
+}
+#box-fixed{
+    width: auto;
+    height: fit-content;
+    background-color: blue;
+    color: white;
+    position: sticky;
+    top: 0;
+    padding: 5px 0;
+}
+#box-sticky {
+    width: auto;
+    height: fit-content;
+    background-color: blue;
+    color: white;
+    position: sticky;
+    top: 0;
+    padding: 5px 0;
+}
+#box-inline {
+    border: 2px solid #c70505;
+}
+#box-block {
+    border: 2px solid #c70505;
+}

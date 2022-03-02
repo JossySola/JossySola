@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Jossy's CheatSheet</title>
+        <link rel="icon" href="./resources/at.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kaushan+Script&family=League+Spartan:wght@300&family=Playfair+Display&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link href="./resources/cheatsheet.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <header>@ Jossy Solá</header>
+
+        <div id="band">
+        <h1>FLOW OF HTML CheatSheet</h1>
+
+        <ul class="nav">
+            <li><a href="./marginandpadding.html" target="_self">Margin & Padding</a></li>
+            <li><a href="./position.html" target="_self">Position</a></li>
+            <li><a href="./display.html" target="_self">Display</a></li>
+            <li><a href="./floatandclear.html" target="_self">Float & Clear</a></li>
+        </ul>
+        </div>
+<!--                                           NEXT PART EDITABLE                                         -->
+        <div id="content">
+        <table class="sheet">
+            <thead>
+                <tr>
+                    <th colspan="3"><h2>DISPLAY</h2></th>
+                </tr>
+                <tr class="theaders">
+                    <th>Concept</th>
+                    <th>Description</th>
+                    <th>Graphic</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="sheet_intro" colspan="3">
+                        <div>The display property <strong>let us control the layout</strong>. It specifies how an element is displayed.<br>By default, the display property is set depending the type of the element.</div>
+                    </td>
+                </tr>
+<!--                                           FIRST ROW                                         -->
+                <tr>
+                    <td class="concept"><h3>INLINE</h3></td>
+                    <td class="midcol"><p><strong>Technicality:</strong><br>An in-line element does not start on a new line and only takes up as much width as necessary.<br><br><strong>How I see it:</strong><br>It's an individual who <strong>only takes his own personal space.</strong></p></td>
+                    <td class="fincol">
+                        <p>This is <span id="box-inline">an inline element</span> which by default, only takes the space necessary to display.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="foot" colspan="3">
+                        <div class="syntax"><h4>Example of inline elements:<br>span, a, img</h4></div>
+                    </td>
+                </tr>
+
+
+<!--                                           SECOND ROW                                         -->
+                <tr>
+                    <td class="concept"><h3>BLOCK</h3></td>
+                    <td class="midcol"><p><strong>Technicality:</strong><br>A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).<br><br><strong>How I see it:</strong><br>This individual <strong>takes up a full row</strong> and <strong>adds a line-break</strong> after itself.</p></td>
+                    <td class="fincol">
+                        <p>Next is an example of a block level element, a paragraph (p)</p><br>
+                        <p id="box-block">Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                        <p>Which takes full width of the parent container.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="foot" colspan="3">
+                        <div class="syntax"><h4>Examples of block-level elements:<br>div, h1-h6, p, form, header, footer, section</h4></div>
+                    </td>
+                </tr>
+
+<!--                                           THIRD ROW                                         -->
+                <tr>
+                    <td class="concept"><h3>INLINE-BLOCK</h3></td>
+                    <td class="midcol"><p>This property allows to set a <strong>width & height</strong> on the element.<br><br><strong>Top and bottom margins/paddings</strong> can be set unlike inline elements.<br><br><strong>Does NOT add a line-break</strong> after the element.</p></td>
+                    <td class="fincol">
+                        <div class="box-parent">
+                            <div class="box-inline-block">1</div>
+                            <div class="box-inline-block">2</div>
+                            <div class="box-inline-block">3</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="foot" colspan="3">
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Jossy's CheatSheet</title>
+        <link rel="icon" href="./resources/at.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kaushan+Script&family=League+Spartan:wght@300&family=Playfair+Display&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link href="./resources/cheatsheet.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <header>@ Jossy Solá</header>
+
+        <div id="band">
+        <h1>FLOW OF HTML CheatSheet</h1>
+
+        <ul class="nav">
+            <li><a href="./marginandpadding.html" target="_self">Margin & Padding</a></li>
+            <li><a href="./position.html" target="_self">Position</a></li>
+            <li><a href="./display.html" target="_self">Display</a></li>
+            <li><a href="./floatandclear.html" target="_self">Float & Clear</a></li>
+        </ul>
+        </div>
+<!--                                           NEXT PART EDITABLE                                         -->
+        <div id="content">
+        <table class="sheet">
+            <thead>
+                <tr>
+                    <th colspan="3"><h2>POSITION</h2></th>
+                </tr>
+                <tr class="theaders">
+                    <th>Concept</th>
+                    <th>Description</th>
+                    <th>Graphic</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="sheet_intro" colspan="3">
+                        <div>The <strong>DEFAULT LAYOUT</strong> makes <strong>ELEMENTS OCCUPY A ROW</strong> of the document from left to right, start at the top and move down the page.</div>
+                    </td>
+                </tr>
+<!--                                           FIRST ROW                                         -->
+                <tr>
+                    <td class="concept"><h3>STATIC</h3></td>
+                    <td class="midcol"><p><strong>Technicality:</strong><br> This is the default position applied to all elements in HTML.<br><br><strong>How I see it:</strong><br> The element is grounded and <strong>CANNOT MOVE</strong> in its <strong>corresponding row</strong> space.</p></td>
+                    <td class="fincol">
+                        <p>ROW SPACE</p>
+                        <div class="box-row">
+                        <div id="box-static"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="foot" colspan="3">
+                        <div class="syntax"><h4>The <strong>properties:</strong> top, bottom, left, right do NOT work with this position.</h4></div>
+                    </td>
+                </tr>
+
+
+<!--                                           SECOND ROW                                         -->
+                <tr>
+                    <td class="concept"><h3>RELATIVE</h3></td>
+                    <td class="midcol"><p><strong>Technicality:</strong><br> The element is positioned <em>RELATIVE</em> to its normal position.<br><br><strong>How I see it:</strong><br>The element can <strong>walk around its row space</strong> (<em>assigned row space of the document</em>).</p></td>
+                    <td class="fincol">
+                        <p>ROW SPACE</p>
+                        <div class="box-row">
+                        <div id="box-relative"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="foot" colspan="3">
+                        <div class="syntax"><h4>The properties: top, bottom, left and right are used to move the element around within its assigned row space in the document.</h4></div>
+                    </td>
+                </tr>
+
+<!--                                           THIRD ROW                                         -->
+                <tr>
+                    <td class="concept"><h3>ABSOLUTE</h3></td>
+                    <td class="midcol"><p><strong>Technicality:</strong><br>The element is positioned relative to the nearest positioned ancestor.<br><br><strong>How I see it:</strong><br>The absolute element <strong>doesn't own a row</strong> in the document because he cannot afford it.<br>Lil Absolute still <strong>lives within his dad row space</strong> (<em>parent element containing him</em>) and <strong>moves around his dads</strong>.</p></td>
+                    <td class="fincol">
+                        <p>ROW SPACE</p>
+                        <div class="box-row">Parent
+
+                        <div id="box-box">Sibling</div>
+                        <div id="box-absolute"></div>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="foot" colspan="3">
+                        <div class="syntax"><h4>Absolute elements can OVERLAP elements using the properties: top, bottom, left and right.</h4></div>
+                    </td>
+                </tr>
+
+ <!--                                           FORTH ROW                                         -->
+                <tr>
+                    <td class="concept"><h3>FIXED</h3></td>
+                    <td class="midcol"><p><strong>Technicality:</strong><br>The element is <strong>positioned relative to the VIEWPORT</strong>, which means it always stays in the same place even if the page is scrolled.<br><br><strong>How I see it:</strong><br>The element is <strong>GLUED</strong> directly in the document and <strong>does NOT own any row</strong> within the document.</p></td>
+                    <td class="fincol">
+                        <div class="box-window">
+                            <div id="box-fixed">Let's pretend this is a website, I'm the fixed one...</div>
+                            <p><br>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.<br>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.<br>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.<br>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="foot" colspan="3">
+                        <div class="syntax"><h4>The properties: top, bottom, left and right are used to position the element which will stay glued in the position given with the properties.</h4></div>
+                    </td>
+                </tr>
+
+<!--                                           FIFTH ROW                                         -->
+            <tr>
+                <td class="concept"><h3>STICKY</h3></td>
+                <td class="midcol"><p><strong>Technicality:</strong><br>The element is positioned based on the user's scroll position. A sticky element toggles between <em>relative</em> and <em>fixed</em>.<br><br><strong>How I see it:</strong><br>Sticky likes to hang out its row.<br><strong>He owns a row</strong> in the neighbourhood and <strong>is able to move around inside it</strong> BUT <strong>when the scroll reaches him, he glues himself</strong> to the document to visit other rows.</p></td>
+                <td class="fincol">
+                    <div class="box-window">
+                        <br><br><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                        <div id="box-sticky">I stick when you reach me and unstick when you go up...</div>
+                        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="foot" colspan="3">
+                    <div class="syntax"><h4>The properties: top, bottom, left and right are used to position the element when is reached.</h4></div>
+                </td>
+            </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+    </body>
+</html>
