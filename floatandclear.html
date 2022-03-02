@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>Jossy's CheatSheet</title>
-        <link rel="icon" href="at.png">
+        <link rel="icon" href="./resources/at.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kaushan+Script&family=League+Spartan:wght@300&family=Playfair+Display&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-        <link href="cheatsheet.css" rel="stylesheet" type="text/css">
+        <link href="./resources/cheatsheet.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
@@ -41,14 +41,17 @@
 <!--                                           FIRST ROW                                         -->
                 <tr>
                     <td class="concept"><h3>FLOAT</h3></td>
-                    <td class="midcol"><p><strong>Technicality:</strong> The Margin is the specified area outside the box's border.<br><br><strong>How I see it:</strong> It's the personal space the box takes from other elements to avoid touching them *COVID free*</p></td>
-                    <td class="fincol"></td>
+                    <td class="midcol"><p>This property is used for positioning and formatting content. <strong>Specifies how an element should float.</strong><br><br>My common sense says that in order to make something float, it has to be an inline/inline-block level element that does not occupy a full width.</p></td>
+                    <td class="fincol">
+                        <div class="box-row" style="height: 32px;">
+                            <span id="float-left">Float left</span>
+                            <span id="float-right">Float right</span>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td class="foot" colspan="3">
-                        <div class="syntax"><h4>FOUR VALUES SYNTAX:<br>Margin: top right bottom left;</h4></div>
-                        <div class="syntax"><h4>THREE VALUES SYNTAX:<br>Margin: top leftright bottom;</h4></div>
-                        <div class="syntax"><h4>TWO VALUES SYNTAX:<br>Margin: topbottom leftright;</h4></div>
+                        <div class="syntax"><h4>This property can have one of the following values: left, right, none, inherit.</h4></div>
                     </td>
                 </tr>
 
@@ -56,14 +59,24 @@
 <!--                                           SECOND ROW                                         -->
                 <tr>
                     <td class="concept"><h3>CLEAR</h3></td>
-                    <td class="midcol"><p><strong>Technicality:</strong> The Padding is the specified area between the content and the border.<br><br><strong>How I see it:</strong> It's the amount of clothing layers the content (Joey´s body) has.</p></td>
-                    <td class="fincol"></td>
+                    <td class="midcol"><p>This property specifies what should happen with an element that is next to a floating element.</p></td>
+                    <td class="fincol">
+
+                        <div class="box-row" style="height: 32px;">
+                            <span id="float-left">Float left</span>
+                            <span id="float-left-2">Float left</span>
+                        </div>
+                        <br>
+                        <div class="box-row" style="height: 60px;">
+                            <span id="float-left">Float left</span>
+                            <span id="clear-left">Clear left</span>
+                        </div>
+
+                    </td>
                 </tr>
                 <tr>
                     <td class="foot" colspan="3">
-                        <div class="syntax"><h4>FOUR VALUES SYNTAX:<br>Padding: top right bottom left;</h4></div>
-                        <div class="syntax"><h4>THREE VALUES SYNTAX:<br>Padding: top leftright bottom;</h4></div>
-                        <div class="syntax"><h4>TWO VALUES SYNTAX:<br>Padding: topbottom leftright;</h4></div>
+                        <div class="syntax"><h4>The possible used values are: none, left, right, both, inherit.</h4></div>
                     </td>
                 </tr>
 
