@@ -300,3 +300,32 @@ NEXT: TABLE GRAPHICS
 #box-block {
     border: 2px solid #c70505;
 }
+#float-left {
+    background-color: blue;
+    color: white;
+    float: left;
+    padding: 5px 5px;
+    border-radius: 3px;
+}
+#float-left-2 {
+    background-color: #c70505;
+    color: white;
+    float: left;
+    padding: 5px 5px;
+    border-radius: 3px;
+}
+#float-right {
+    background-color: #c70505;
+    color: white;
+    float: right;
+    padding: 5px 5px;
+    border-radius: 3px;
+}
+#clear-left {
+    background-color: #c70505;
+    color: white;
+    clear: left;
+    float: left;
+    padding: 5px 5px;
+    border-radius: 3px;
+}
