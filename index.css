@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 700;
+    font-size: 50px;
+    font-style: bold;
+    margin: 25px 0px 50px;
+}
+h2 {
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+h3 {
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 40px;
+}
+p {
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+main {
+    width: 1301px;
+    height: 855px;
+    position: relative;
+    margin-bottom: 100px;
+    left: 15%;
+}
+#colors {
+    top: auto;
+    left: 1px;
+}
+#fonts {
+    top: 322px;
+    left: 1px;
+}
+#text-styles {
+    right: 1px;
+    top: 322px;
+    text-align: left;
+}
+#text-styles h1, h2 {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+#text-styles li {
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 50px;
+}
+
+section {
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid gray;
+    text-align: left;
+    position: absolute;
+    padding: 30px 30px;
+}
+section div {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    
+}
+#set-colors {
+    width: 1230px;
+    height: 167.6px;
+    padding: 0;
+}
+#navy-logo {
+    background-color: #011c3e;
+    color: white;
+    width: 150px;
+    height: 90px;
+    text-align: center;
+    float: left;
+    padding: 3% 25px;
+}
+#navy-background {
+    background-color: #011326;
+    color: white;
+    width: 150px;
+    height: 90px;
+    text-align: center;
+    float: left;
+    padding: 3% 25px;
+}
+#color-logo {
+    background-color: #faebd7;
+    color: black;
+    width: 150px;
+    height: 90px;
+    text-align: center;
+    float: left;
+    padding: 3% 25px;
+}
+#body-color {
+    background-color: #eee4d7;
+    color: black;
+    width: 150px;
+    height: 90px;
+    text-align: center;
+    float: left;
+    padding: 3% 25px;
+}
+#button-color {
+    background-color: #3A10E5;
+    color: white;
+    width: 150px;
+    height: 90px;
+    text-align: center;
+    float: left;
+    padding: 3% 25px;
+}
+#button-color-hover {
+    background-color: #5533FF;
+    color: white;
+    width: 150px;
+    height: 90px;
+    text-align: center;
+    float: left;
+    padding: 3% 25px;
+}
+
+#kaushan p {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    
+}
+#kaushan h3 {
+    font-family: 'Kaushan Script', cursive;
+    font-style: normal;
+    
+}
+#noto p {
+    font-family: 'Noto Serif Display', serif;
+
+}
+#noto h3 {
+    font-family: 'Noto Serif Display', serif;
+    font-style: normal;
+
+}
+#kanit p {
+    font-family: 'Kanit', sans-serif;
+}
+#kanit h3 {
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+}
+
